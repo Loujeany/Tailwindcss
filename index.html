@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
+<head <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="./dist/output.css"> -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Tailwind Css</title>
@@ -20,6 +20,20 @@
                 <a href="#" class="hover:text-yellow-400">About</a>
                 <a href="#" class="hover:text-yellow-400">Contact</a>
                 <a href="#" class="hover:text-yellow-400">Social</a>
+                <a href="#" class="bg-pink-600 px-5 py-2 hover:bg-red-400 rounded-full">Call me</a>
+            </div>
+            <div id="mobile-btn" class="md:hidden">
+                <i class="ri-menu-line text-3xl"></i>
+            </div>
+        </div>
+
+        <div class="md:hidden">
+            <div id="mobile-menu" class=" absolute flex hidden flex-col 
+                    left-6 right-6 space-y-4 py-8 text-1xl bg-gray-100 drop-shadow-lg border border-gray-300 items-center">
+                <a href="#" class="text-slate-600 font-bold ">Potfolio</a>
+                <a href="#" class="text-slate-600 font-bold">About</a>
+                <a href="#" class="text-slate-600 font-bold">Contact</a>
+                <a href="#" class="text-slate-600 font-bold">Social</a>
                 <a href="#" class="bg-pink-600 px-5 py-2 hover:bg-red-400 rounded-full">Call me</a>
             </div>
         </div>
@@ -48,7 +62,8 @@
     <section id="author">
         <div class="container px-5 mx-auto text-center my-6 ">
             <h1 class="font-bold text-4xl">Lorem ipsum dolor sit amet consectetur</h1>
-            <p class="mx-auto mt-8 max-w-4xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque cum in voluptas velit at iste
+            <p class="mx-auto mt-8 max-w-4xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque
+                cum in voluptas velit at iste
                 voluptates illo ea similique fugiat expedita, doloribus vitae eveniet nisi impedit temporibus
                 perspiciatis nobis quisquam harum! Sequi commodi dignissimos accusamus, libero consectetur dolorem quo?
             </p>
@@ -80,6 +95,51 @@
             </div>
         </div>
     </section>
+
+    <footer class="bg-black">
+        <div class="container mx-auto flex flex-col-reverse
+        text-white px-5 py-10 space-y-8 justify-between md:flex-row md:space-y-0 md:space-x-2">
+            <div class="flex flex-col items-center justify-between space-y-6 md:space-y-2 md:items-start ">
+                <div>
+                    <img src="dist/img/logo.png" alt="" class="h-8">
+                </div>
+                <div class="space-x-2">
+                    <a href="#"><i class="ri-facebook-box-fill text-3xl"></i></a>
+                    <a href="#"><i class="ri-instagram-fill text-3xl"></i></a>
+                    <a href="#"><i class="ri-youtube-fill text-3xl"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill text-3xl"></i></a>
+                    <a href="#"><i class="ri-twitter-fill text-3xl"></i></a>
+
+                </div>
+            </div>
+
+            <div class="flex justify-around space-x-12">
+                <div class="flex flex-col space-y-2">
+                    <a href="#" class="hover:text-pink-300">Home</a>
+                    <a href="#" class="hover:text-pink-300">About</a>
+                    <a href="#" class="hover:text-pink-300">Contact</a>
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <a href="#" class="hover:text-pink-300">Portfolio</a>
+                    <a href="#" class="hover:text-pink-300">Credits</a>
+                    <a href="#" class="hover:text-pink-300">Inspirition</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-between space-y-6 items-center">
+                <form action="#">
+                    <div class="flex space-x-3">
+                        <input type="text" placeholder="Subscribe our Newsletter"
+                            class="bg-amber-50 text-slate-600 py-2 px-6 rounded-full">
+                        <button class="bg-pink-600 hover:bg-pink-400 py-2 px-6 rounded-full">Go</button>
+                    </div>
+                </form>
+                <div class="hidden md:block">Copyright &copy; 2025, All Rights Reserved</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/dist/script/script.js"></script>
 </body>
 
 </html>
